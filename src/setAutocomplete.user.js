@@ -4,7 +4,7 @@
 // @match       *://*/*
 // @grant       none
 // @version     1.0
-// @author      d3ward
+// @author      Eduard Ursu ( d3ward )
 // @description Script to disable the autocomplete list on a form inputs
 // ==/UserScript==
 

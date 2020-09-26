@@ -4,7 +4,7 @@
 // @match       *://*/*
 // @grant       none
 // @version     1.0
-// @author      d3ward
+// @author      Eduard Ursu ( d3ward )
 // @description Script to enable selection of any text 
 // ==/UserScript==
 
