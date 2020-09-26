@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name        awesomeScroller
-// @namespace   Scriptz (https://github.com/d3ward/scriptz)
+// @namespace   Violentmonkey Scripts
 // @match       *://*/*
 // @grant       none
 // @version     1.0
-// @author      Eduard Ursu ( d3ward )
+// @author      d3ward
 // @description Script to scroll with a fake awesome scrollbar
 // ==/UserScript==
 
@@ -31,7 +31,7 @@ slider.addEventListener("input",(event)=>{
 
  var style = document.createElement('style');
     style.type = 'text/css';
-    style.innerHTML = "#awesomeScroller{position:fixed;right:43px;box-shadow: none;border: 0;background: transparent;transform-origin:100% 100%;top: calc(100vh - 60px);z-index:9999999;width:calc(100vh - 50px);transform:rotate(90deg);height:35px;}"+
+    style.innerHTML = "#awesomeScroller{position:fixed;right:43px;box-shadow: none;touch-action:none;border: 0;background: transparent;transform-origin:100% 100%;top: calc(100vh - 60px);z-index:9999999;width:calc(100vh - 50px);transform:rotate(90deg);height:35px;}"+
 
 "#awesomeScroller{-webkit-appearance:none}#awesomeScroller::-webkit-slider-runnable-track{width:300px;height:5px;background:#ddd;border:none;border-radius:3px}#awesomeScroller::-webkit-slider-thumb{-webkit-appearance:none;border:1px solid grey;height:16px;width:46px;margin-top:-5px;border-radius:8px;background:black;}#awesomeScroller:focus{outline:none}#awesomeScroller:focus::-webkit-slider-runnable-track{background:#ccc}"
 ;
