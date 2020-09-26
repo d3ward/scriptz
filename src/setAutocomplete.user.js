@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        setAutocomplete
-// @namespace   Violentmonkey Scripts
+// @namespace   Scriptz (https://github.com/d3ward/scriptz)
 // @match       *://*/*
 // @grant       none
 // @version     1.0
