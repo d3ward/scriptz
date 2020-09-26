@@ -18,5 +18,5 @@ var status="off";
       for (i=0; inputElements[i]; i++) 
          inputElements[i].setAttribute('autocomplete',status);
   }
-setAutocomplete("off");
+setAutocomplete();
   
