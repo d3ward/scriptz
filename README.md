@@ -16,10 +16,11 @@ Once you installed the Violentmonkey extension do the following steps :
   - Choose upload from url
   - Add the script link you can find in the List below
   - Confirm installation
+Or just click on the link of the script and a installation pages will be opened by extension manager
   
 Now  if you want you can setup the script like changing some behavior or options
 For example , by default all the scripts will be injected to all websites , that because on each script at row 4 there is a : ```// @match       *://*/*```
-you can edit that to match your custom website like ```// @match      https://github.com``` or anything else . You can have multiple match ( you need to have one mathc per url) 
+you can edit that to match your custom website like ```// @match      https://github.com``` or anything else . You can have multiple match ( you need to have one match per url) 
 
 ## List of userscripts
 
@@ -30,24 +31,24 @@ Chrome Web Store website is not mobile friendly . Really Google ?
 
 I created a script that try to make the CWS more mobile friendly , available on dedicated repo -> [CWS](https://github.com/d3ward/cws-mobile)
 
-### setAutocomplete.js
+### setAutocomplete.js [Link](https://github.com/d3ward/scriptz/raw/master/src/setAutocomplete.user.js)
 
 The autocomplete attribute specifies whether a form should have autocomplete on or off.
 When autocomplete is on, the browser automatically complete values based on values that the user has entered before.
 
 This script disables the autocomplete list on form inputs
 
-### setUserSelect.js
+### setUserSelect.js [Link](https://github.com/d3ward/scriptz/raw/master/src/setUserSelect.user.js)
 
 The user-select CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
 
 This script force-enable the text selection 
 
-### tbScroller.js
+### tbScroller.js [Link](https://github.com/d3ward/scriptz/raw/master/src/tbScroller.user.js)
 
 Script that add 2 buttons at rigth middle to scroll by scree height to top or bottom
 
-### awesomeScroller.js
+### awesomeScroller.js [Link](https://github.com/d3ward/scriptz/raw/master/src/awesomeScroller.user.js)
 
 Script to scroll with a fake awesome scrollbar
 
