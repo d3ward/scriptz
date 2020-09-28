@@ -52,6 +52,10 @@ Script that add 2 buttons at rigth middle to scroll by scree height to top or bo
 
 Script to scroll with a fake awesome scrollbar
 
+### scrollToTop.js [Link](https://github.com/d3ward/scriptz/raw/master/src/scrollToTop.user.js)
+
+Script to scroll to top with smooth scroll
+
 ### floatly.js [Link](https://github.com/d3ward/floatly/raw/master/floatly.user.js)
 
 Floatly is an awesome floating button that brings quick actions from any website. Made to be mobile friendly first, but it also works on desktop.
