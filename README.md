@@ -56,6 +56,10 @@ Script to scroll with a fake awesome scrollbar
 
 Script to scroll to top with smooth scroll
 
+### rotateThis.js [Link](https://github.com/d3ward/scriptz/raw/master/src/rotateThis.user.js)
+
+Simple script to rotate images by 45° on each click
+
 ### floatly.js [Link](https://github.com/d3ward/floatly/raw/master/floatly.user.js)
 
 Floatly is an awesome floating button that brings quick actions from any website. Made to be mobile friendly first, but it also works on desktop.
