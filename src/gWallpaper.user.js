@@ -1,0 +1,48 @@
+// ==UserScript==
+// @name        gWallpaper
+// @namespace   Scriptz (https://github.com/d3ward/scriptz)
+// @include     http://*.google.*/*
+// @include     https://*.google.*/*
+// @grant       none
+// @version     1.0
+// @author      Eduard Ursu ( d3ward )
+// @description Change Google Search Engine background image every day with random wallpaper 
+// ==/UserScript==
+
+//Edit the above list with images url
+var wallpaperList = [
+    "https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "https://images.pexels.com/photos/2113566/pexels-photo-2113566.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "https://images.pexels.com/photos/5409751/pexels-photo-5409751.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+    "https://images.pexels.com/photos/273886/pexels-photo-273886.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "https://images.pexels.com/photos/640809/pexels-photo-640809.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"];
+//Get a random image from the list
+function getWallpaper() {
+    var num = Math.floor( Math.random() * wallpaperList.length );
+    return wallpaperList[ num ];
+}
+
+// Checks if one day has passed. 
+function hasOneDayPassed(){
+    var date = new Date().toLocaleDateString();
+    if( localStorage.imageDate == date ) return false;
+    localStorage.imageDate = date;
+    return true;
+}
+//Update image url once per day 
+function runOncePerDay(){
+    if( !hasOneDayPassed() ) return false;
+    localStorage.imageUrl = getWallpaper();
+}
+
+runOncePerDay();
+var url=localStorage.imageUrl;
+
+var b = document.body;
+b.style.background = '#ccc url("'+url+'") no-repeat center center fixed';
+b.style.backgroundSize = "cover";

@@ -56,6 +56,14 @@ Script to scroll with a fake awesome scrollbar
 
 Script to scroll to top with smooth scroll
 
+### noDAO.js [Link](https://github.com/d3ward/scriptz/raw/master/src/noADO.user.js)
+
+Script to disable animation delay opacity
+
+### gWallpaper.js [Link](https://github.com/d3ward/scriptz/raw/master/src/gWallpaper.user.js)
+
+Change Google Search Engine background image every day with random wallpaper 
+
 ### rotateThis.js [Link](https://github.com/d3ward/scriptz/raw/master/src/rotateThis.user.js)
 
 Simple script to rotate images by 45° on each click
