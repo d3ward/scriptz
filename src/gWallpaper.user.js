@@ -3,6 +3,8 @@
 // @namespace   Scriptz (https://github.com/d3ward/scriptz)
 // @include     http://*.google.*/*
 // @include     https://*.google.*/*
+// @exclude http://www.google.*/search*
+// @exclude https://www.google.*/search*
 // @exclude http://www.google.*/maps*
 // @exclude http://www.google.*/reader*
 // @exclude https://www.google.*/reader*
@@ -13,7 +15,7 @@
 // @grant       none
 // @version     1.3
 // @author      Eduard Ursu ( d3ward )
-// @description Change Google Search Engine background image every day with random wallpaper 
+// @description Change Google Search Engine background image every time elapsed with random wallpaper 
 // ==/UserScript==
 
 //Edit the above list with images url
@@ -69,12 +71,3 @@ if(url == undefined) {
 var b = document.body;
 b.style.background = '#ccc url("'+url+'") no-repeat center center fixed';
 b.style.backgroundSize = "cover";
-
-function addCSS() {
-    var style = document.createElement('style');
-    style.type = 'text/css';
-    style.innerHTML = '.g{width: auto!important;background: var(--darkreader-neutral-background ,#fff)!important;border-radius: 8px!important;padding: 10px!important;}.gb_Hg.gb_Ta{margin-right:10px!important;}#taw,#botstuff,#foot,g-card,.Xeztj{padding:10px;}.mJxzWe{padding-top:10px;}#taw,#botstuff,#foot,.gb_Hg.gb_Ta,g-card,.Xeztj,.eqAnXb,.G5cKqf,.vg4Z0e,.mJxzWe,.sh-dr__restricts{background-color: var(--darkreader-neutral-background ,#fff)!important;border-radius:8px;}#foot,#rhs .g-blk.VjDLd,#rhs .VjDLd.liYKde,#taw{margin:20px 0;}#center_col .kp-blk{width:auto!important;}';
-    document.head.appendChild(style);
-}
-addCSS();
-
