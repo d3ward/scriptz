@@ -60,6 +60,10 @@ Script to scroll to top with smooth scroll
 
 Script to disable animation delay opacity
 
+### repoDownload.js [Link](https://github.com/d3ward/scriptz/raw/master/src/repoDownload.user.js)
+
+Script that add a button to download a github repository 
+
 ### gWallpaper.js [Link](https://github.com/d3ward/scriptz/raw/master/src/gWallpaper.user.js)
 
 Change Google Search Engine background image every day with random wallpaper 
