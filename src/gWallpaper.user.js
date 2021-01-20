@@ -1,19 +1,11 @@
 // ==UserScript==
 // @name        gWallpaper
 // @namespace   Scriptz (https://github.com/d3ward/scriptz)
-// @include     http://*.google.*/*
-// @include     https://*.google.*/*
-// @exclude http://www.google.*/search*
-// @exclude https://www.google.*/search*
-// @exclude http://www.google.*/maps*
-// @exclude http://www.google.*/reader*
-// @exclude https://www.google.*/reader*
-// @exclude http://www.google.*/calendar*
-// @exclude https://www.google.*/calendar*
-// @exclude http://www.google.*/ig*
-// @exclude https://www.google.*/ig*
+// @include     https://www.google.*
+// @exclude     http://www.google.*/*
+// // @run-at document-end
 // @grant       none
-// @version     1.3
+// @version     1.4
 // @author      Eduard Ursu ( d3ward )
 // @description Change Google Search Engine background image every time elapsed with random wallpaper 
 // ==/UserScript==
@@ -43,30 +35,24 @@ function getWallpaper() {
  * 1 week = 604800
 */
 var timeE = 604800;
-// Checks time elapsed 
-function hasTimePassed(){
-  
-  
-    var date = new Date();
-    var date2 = new Date(localStorage.imageDate)
-    var timeDiff= date - date2;
-    timeDiff = Math.round(timeDiff/1000);
-  
-    if( timeDiff > timeE ){localStorage.imageDate = date; return true; }
-      
-    return false;
-}
-//Update image url once per day 
-function runOncePerDay(){
-    if( !hasTimePassed() ) return false;
-    localStorage.imageUrl = getWallpaper();
-}
+var currDate = new Date();
+var date = new Date(localStorage.imageDate);
+var url =localStorage.imageUrl;
 
-runOncePerDay();
-var url=localStorage.imageUrl;
 if(url == undefined) {
   url = getWallpaper();
+  date= currDate;
   localStorage.imageUrl = url;
+  localStorage.imageDate = currDate;
+}
+
+var timeDiff= Math.abs(currDate - date);
+    timeDiff = Math.round(timeDiff/1000);
+ 
+//Update image url if timeElapsed
+if( timeDiff > timeE ){
+    localStorage.imageDate = currDate;
+    localStorage.imageUrl = getWallpaper();
 }
 var b = document.body;
 b.style.background = '#ccc url("'+url+'") no-repeat center center fixed';
