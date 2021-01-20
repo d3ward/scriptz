@@ -2,8 +2,15 @@
 // @name        gWallpaper
 // @namespace   Scriptz (https://github.com/d3ward/scriptz)
 // @include     https://www.google.*
-// @exclude     http://www.google.*/*
-// // @run-at document-end
+// @exclude http://www.google.*/search*
+// @exclude https://www.google.*/search*
+// @exclude http://www.google.*/maps*
+// @exclude http://www.google.*/reader*
+// @exclude https://www.google.*/reader*
+// @exclude http://www.google.*/calendar*
+// @exclude https://www.google.*/calendar*
+// @exclude http://www.google.*/ig*
+// @exclude https://www.google.*/ig*
 // @grant       none
 // @version     1.4
 // @author      Eduard Ursu ( d3ward )
