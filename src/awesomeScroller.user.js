@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name        awesomeScroller
-// @namespace   Violentmonkey Scripts
+// @namespace  Scriptz (https://github.com/d3ward/scriptz)
 // @match       *://*/*
 // @grant       none
 // @version     1.0
-// @author      d3ward
+// @author      Eduard Ursu ( d3ward )
 // @description Script to scroll with a fake awesome scrollbar
 // ==/UserScript==
 
