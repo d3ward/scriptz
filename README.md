@@ -72,7 +72,7 @@ Change Google Search Engine background image every day with random wallpaper
 
 Simple script to rotate images by 45° on each click
 
-### floatly.js [Link](https://github.com/d3ward/floatly/raw/master/floatly.user.js)
+### floatly.js [Link](https://github.com/d3ward/scriptz/raw/master/src/floatly.user.js)
 
 Floatly is an awesome floating button that brings quick actions from any website. Made to be mobile friendly first, but it also works on desktop.
 
@@ -82,8 +82,9 @@ Checkout the dedicated repo wich include an extension version with GUI -> [Float
 
 Meta Theme Injector is an extension that let you customize the theme-color meta tag on websites.
 
-Classic script version -> [Link](https://github.com/d3ward/mti/raw/master/userscripts/mti.js)
-Auto-detect color version ->[Link](https://github.com/d3ward/mti/raw/master/userscripts/a_mti.js)
+Classic script version -> [Link](https://github.com/d3ward/scriptz/raw/master/src/mti.js)
+
+Auto-detect color version ->[Link](https://github.com/d3ward/scriptz/raw/master/src/a_mti.js)
 
 Checkout the dedicated repo wich include an extension version with GUI -> [MTI](https://github.com/d3ward/mti)
 
